@@ -748,7 +748,7 @@ void UGDAttributeSetBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
 
 `REPTNOTIFY_Always`用于设置OnRep函数在客户端值已经与服务端同步的值相同的情况下触发(因为有预测), 默认设置下, 客户端值与服务端同步的值相同时, OnRep函数是不会触发的.  
 
-如果`Attribute`无需像`Meta Attribute`那样同步, 那么`OnRep`和`GetLifetimeReplicatedProps`步骤可以跳过.  
+如果`Attribute`像`Meta Attribute`那样无需同步, 那么`OnRep`和`GetLifetimeReplicatedProps`步骤可以跳过.  
 
 **[⬆ 返回目录](#table-of-contents)**
 
