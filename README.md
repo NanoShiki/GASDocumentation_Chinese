@@ -1149,7 +1149,7 @@ float FAggregatorModChannel::MultiplyMods(const TArray<FAggregatorMod>& InMods, 
 * 对于周期性Effect中`GameplayEffectSpec`的周期, 默认是`GameplayEffect`的周期, 但是可以是不同的.
 * 该`GameplayEffectSpec`的当前堆栈数. 堆栈限制取决于`GameplayEffect`.
 * [GameplayEffectContextHandle](#concepts-ge-context)表明该`GameplayEffectSpec`由谁创建.
-* `Attribute`在`GameplayEffectSpec`创建时由Snapshot捕获.
+* 在`GameplayEffectSpec`创建时由Snapshot捕获的`Attribute`.
 * 除了`GameplayEffect`授予的`GameplayTags`, `GameplayEffectSpec`还会授予目标(Target)`DynamicGrantedTags`.
 * 除了`GameplayEffect`拥有的`AssetTags`, `GameplayEffectSpec`还会拥有`DynamicAssetTags`.
 * `SetByCaller TMaps`.
