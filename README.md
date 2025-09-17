@@ -906,7 +906,7 @@ virtual void OnActiveGameplayEffectAddedCallback(UAbilitySystemComponent* Target
 
 为了在`GameplayAbility`之外移除`GameplayEffect`, 你就需要获取到该目标的`ASC`并使用它的函数之一来`RemoveActiveGameplayEffect`.  
 
-你可以绑定`持续(Duration)`或`无限(Infinite)GameplayEffect`的委托来监听其应用到`ASC`:  
+你可以绑定`持续(Duration)`或`无限(Infinite)GameplayEffect`的委托来监听其从`ASC`上移除:  
 
 ```c++
 AbilitySystemComponent->OnAnyGameplayEffectRemovedDelegate().AddUObject(this, &APACharacterBase::OnRemoveGameplayEffectCallback);
