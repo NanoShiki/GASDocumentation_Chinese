@@ -1150,8 +1150,8 @@ float FAggregatorModChannel::MultiplyMods(const TArray<FAggregatorMod>& InMods, 
 * 该`GameplayEffectSpec`的当前堆栈数. 堆栈限制取决于`GameplayEffect`.
 * [GameplayEffectContextHandle](#concepts-ge-context)表明该`GameplayEffectSpec`由谁创建.
 * 在`GameplayEffectSpec`创建时由Snapshot捕获的`Attribute`.
-* 除了`GameplayEffect`授予的`GameplayTags`, `GameplayEffectSpec`还会授予目标(Target)`DynamicGrantedTags`.
-* 除了`GameplayEffect`拥有的`AssetTags`, `GameplayEffectSpec`还会拥有`DynamicAssetTags`.
+* 在`GameplayEffect`授予的`GameplayTags`之外, `GameplayEffectSpec`额外授予目标(Target)的`DynamicGrantedTags`.
+* 在`GameplayEffect`拥有的`AssetTags`之外, `GameplayEffectSpec`额外拥有的`DynamicAssetTags`.
 * `SetByCaller TMaps`.
 
 **[⬆ 返回目录](#table-of-contents)**
